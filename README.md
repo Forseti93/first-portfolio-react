@@ -1,4 +1,5 @@
-# <a href="https://forseti93.github.io/" target="_blank">Portfolio site - React, headless WP, graphQL</a>
+# <a href="https://forseti93.github.io/">Portfolio site</a> - React, headless WP, graphQL
+<b>*Tip: "CTRL + click" on the link to open in new tab. Github doesn't add target="_blank" to the link...</b>
 
 <b>Idea:</b> <br/>
   to make UI here and data on other hosting as a headless WP
