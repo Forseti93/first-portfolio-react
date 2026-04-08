@@ -1,0 +1,183 @@
+.about-page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+  .text-zone {
+    width: 40%;
+    margin-left: 180px;
+    h1 {
+      font-size: 53px;
+      font-family: 'Coolvetica';
+      color: var(--text-color-default);
+      position: relative;
+      margin: 15px 0;
+      &::before {
+        content: '<h1>';
+        color: var(--text-color-light);
+        opacity: 0.6;
+        position: absolute;
+        bottom: 64px;
+        left: -20px;
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+      }
+      &::after {
+        content: '</h1>';
+        color: var(--text-color-light);
+        opacity: 0.6;
+        position: absolute;
+        bottom: -17px;
+        left: -20px;
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+      }
+    }
+    p {
+      font-size: 20px;
+      position: relative;
+      padding: 5px 0;
+      margin: 15px 0;
+      display: inline-block;
+      color: var(--text-color-light);
+      &::before {
+        content: '<p>';
+        color: var(--text-color-light);
+        opacity: 0.6;
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+      }
+      &::after {
+        content: '</p>';
+        color: var(--text-color-light);
+        opacity: 0.6;
+        position: absolute;
+        bottom: -12px;
+        left: -20px;
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+      }
+      &:nth-of-type(1) {
+        animation-delay: 1s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 1.2s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 1.4s;
+      }
+    }
+    pre {
+      margin: 0;
+      display: inline;
+    }
+    .text-animate-hover:hover {
+      animation: wobble 0.7s;
+    }
+  }
+  .skills-container {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .skills-spinner {
+      height: 200px;
+      width: 200px;
+      margin: 0;
+      animation-name: skillboxrotate;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+      transform-style: preserve-3d;
+
+      div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid var(--border-light);
+        background: var(--background-light);
+        font-size: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 5px var(--background-light);
+        border: var(--border-darkest) 1px solid;
+        img {
+          height: 100px;
+        }
+      }
+
+      .face1 {
+        transform: translateZ(100px);
+      }
+      .face2 {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+      .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+      }
+      .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+      }
+      .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        opacity: 1;
+      }
+      .face6 {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+    }
+
+    @keyframes skillboxrotate {
+      from,
+      to {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+      16% {
+        transform: rotateY(-90deg);
+      }
+      33% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+      }
+      50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+      }
+      66% {
+        transform: rotateY(-180deg) rotateZ(90deg) rotateY(-90deg);
+      } 
+      83% {
+        transform: rotateY(-180deg) rotateZ(90deg) rotateY(-90deg) rotateZ(90deg);
+      }  
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .about-page .text-zone {
+    font-size: 25px;
+    margin-left: 15%;
+    width: 75%;
+    p {
+      padding: 0;
+      margin: 5px 0;
+      font-size: 20px;
+      font-family: 'Coolvetica';
+      font-weight: 100;
+      text-indent: 50px
+    }
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .about-page .skills-container {
+    position: absolute;
+    opacity: 0.2;
+    left: 33%;
+    z-index: -1;
+  }
+} 

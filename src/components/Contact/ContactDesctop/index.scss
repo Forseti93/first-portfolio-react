@@ -1,0 +1,176 @@
+.contact {
+  margin: 200px 0 0 170px;
+  width: 35%;
+  .text-animate-hover:hover {
+    animation: heartBeat 1s;
+    color: var(--text-color-default);
+  }
+  h1 {
+    font-family: 'Coolvetica';
+    font-size: 50px;
+    color: var(--text-color-light);
+    transition: text-shadow 0.3s ease-in-out;
+    width: fit-content;
+    position: relative;
+    .text-animate-hover:hover {
+      animation: wobble 0.7s;
+      color: var(--background-darkest);
+    }
+    &::before {
+      content: '<h1>';
+      font-size: 18px;
+      text-shadow: none;
+      position: absolute;
+      font-family: 'La Belle Aurore';
+      animation: none;
+      top: -10px;
+      left: -20px;
+      opacity: 0.6;
+    }
+    &::after {
+      content: '</h1>';
+      font-size: 18px;
+      text-shadow: none;
+      position: absolute;
+      font-family: 'La Belle Aurore';
+      animation: none;
+      bottom: -15px;
+      left: -20px;
+      opacity: 0.6;
+    }
+  }
+  .contact-description {
+    font-size: 18px;
+    color: var(--text-color-light);
+    svg {
+      color: var(--text-color-default);
+      margin-left: 20px;
+    }
+  }
+  .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s;
+
+    input {
+      background: var(--background-light);
+      border: none;
+      font-size: 20px;
+      height: 40px;
+      margin: 2px;
+      padding: 0 10px;
+      color: var(--background-darkest);
+      width: 100%;
+    }
+    .left,
+    .right {
+      width: 50%;
+    }
+    input:nth-of-type(1),
+    input:nth-of-type(2) {
+      box-sizing: border-box;
+      width: calc(100% - 4px);
+    }
+
+    textarea {
+      height: 80px;
+      width: 100%;
+      resize: vertical;
+      background: var(--background-light);
+      border: none;
+      font-size: 20px;
+      margin: 2px;
+      padding: 10px 10px;
+      color: var(--background-darkest);
+    }
+    .contact-form_status {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 4px 0 0 auto;
+      span {
+        animation: fadeInLeft 1s;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+      }
+      svg {
+        font-size: 30px;
+        margin-left: 15px;
+      }
+      &-sending {
+        color: var(--text-color-sending);
+      }
+      &-ok {
+        color: var(--text-color-ok);
+      }
+      &-error {
+        color: var(--text-color-error);
+      }
+    }
+    button {
+      margin-left: 15px;
+      padding: 10px;
+      background: none;
+      border: 2px solid var(--text-color-default);
+      color: var(--text-color-default);
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-radius: 5px;
+      &:hover {
+        transition: 0.3s ease-in-out;
+        background-color: var(--text-color-default);
+        color: var(--background-darkest);
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.info-map {
+  position: absolute;
+  right: 26%;
+  top: 19%;
+  z-index: 5;
+  transform: translateY(-50%);
+  animation: fadeIn 1s;
+  font-size: 26px;
+  color: var(--background-light);
+  background: var(--background-darkest);
+  padding: 15px;
+  span {
+    line-height: 50px;
+    color: var(--text-color-default);
+    font-size: 20px;
+  }
+}
+
+.map-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--background-light);
+  float: right;
+  width: 45%;
+  height: 100%;
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: fadeIn 1s 1.2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+.hide {
+  display: none;
+}

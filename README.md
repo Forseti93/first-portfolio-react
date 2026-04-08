@@ -1,8 +1,11 @@
-# <a href="https://forseti93.github.io/">Portfolio site</a> - React, headless WP, graphQL
-<b>*Tip: "CTRL + click" on the link to open in new tab. Github doesn't add target="_blank" to the link...</b>
+node -v
+v16.13.2
 
-<b> Goals:</b> 
-  1. To create portfolio site
-  2. Learn and try animations
-  3. Practise React, Git comand line, CSS, HTML, JS
- 
+npm -v
+8.1.2
+
+Componets tree:
+App.js -> Layout component -> Home component inside the Layout. React Router switches compoments Home/Contact/About via <Outlet />.
+
+*Each component is inside the folder src/components/
+**Nested components e.g. Layout -> Sidebar - src/components/Layout/Sidebar

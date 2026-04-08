@@ -1,0 +1,25 @@
+.text-animate {
+  opacity: 0;
+  display: inline-block;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+
+  @for $i from 1 to 36 {
+    &._#{$i} {
+      animation-delay: #{$i/10}s;
+    }
+  }
+
+  &-hover {
+    display: inline-block;
+
+    &:hover {
+      animation: rubberBand 1s;
+      color: var(--background-darkest);
+    }
+  }
+}
+pre {
+  margin: 0;
+  display: inline;
+}

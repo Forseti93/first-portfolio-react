@@ -1,0 +1,52 @@
+@import 'animate.css';
+
+@font-face {
+    font-family: 'Helvetica Neu';
+    src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+:root {
+  // background
+  --background-darkest: #000000;
+  --background-default: #3d8db5;
+  --website-background: #3d8db5;
+  --background-light: #daebe8;
+  //text
+  --text-color-default: #b7d7e8;
+  --text-color-light: white;
+  --text-color-sending: rgb(252, 168, 51);
+  --text-color-ok: rgb(75, 197, 94);
+  --text-color-error: rgb(213, 0, 0);
+  //borders
+  --border-darkest: #000000;
+  --border-default: #3d8db5;
+  --border-light: #daebe8;  
+  //icons
+  --icons-colors-darkest: #000000;
+  --icons-colors-default: #b7d7e8;
+  --icons-colors-light: white;
+  
+
+}
+
+
+body {
+    overflow-y: auto;
+}
+
+input,
+textarea {
+font-family: 'Heletica Neue';
+}
+
+.page {
+    min-height: 650px;
+}

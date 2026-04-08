@@ -1,0 +1,48 @@
+.logo-container {
+  z-index: -1;
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+
+  svg.outlined-logo {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    transform: rotateZ(30deg);
+  }
+
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    transform: rotateZ(30deg);
+    z-index: 1;
+    &.appear {
+      transition-property: opacity;
+      transition-duration: 5s;
+    }
+  }
+
+  .svg-container {
+    stroke: var(--text-color-default);
+    stroke-width: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hone-page .text-zone {
+    width: 100%;
+  }
+  .logo-container .solid-logo.appear {
+    opacity: 0.2;
+  }
+}
