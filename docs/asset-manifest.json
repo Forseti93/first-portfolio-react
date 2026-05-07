@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.52273106.css",
-    "main.js": "./static/js/main.2503883f.js",
-    "static/js/787.c0ffedfe.chunk.js": "./static/js/787.c0ffedfe.chunk.js",
+    "main.css": "./static/css/main.473f0bfb.css",
+    "main.js": "./static/js/main.d86f6a00.js",
+    "static/js/453.72f4e2e6.chunk.js": "./static/js/453.72f4e2e6.chunk.js",
     "static/media/helvetica-neu.ttf": "./static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff2": "./static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/logo_sub.png": "./static/media/logo_sub.3293396b4c39ed12ea73.png",
@@ -11,12 +11,12 @@
     "static/media/logo-lines-2.svg": "./static/media/logo-lines-2.d3bd61da785e30f08734b2dce495b2ef.svg",
     "static/media/redux.svg": "./static/media/redux.71eb13e2fdd1de624e9a856125906e3b.svg",
     "index.html": "./index.html",
-    "main.52273106.css.map": "./static/css/main.52273106.css.map",
-    "main.2503883f.js.map": "./static/js/main.2503883f.js.map",
-    "787.c0ffedfe.chunk.js.map": "./static/js/787.c0ffedfe.chunk.js.map"
+    "main.473f0bfb.css.map": "./static/css/main.473f0bfb.css.map",
+    "main.d86f6a00.js.map": "./static/js/main.d86f6a00.js.map",
+    "453.72f4e2e6.chunk.js.map": "./static/js/453.72f4e2e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52273106.css",
-    "static/js/main.2503883f.js"
+    "static/css/main.473f0bfb.css",
+    "static/js/main.d86f6a00.js"
   ]
 }
